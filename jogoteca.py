@@ -40,7 +40,7 @@ def login():
 def autenticar():
     if 'alohomora' == request.form['senha']:
         session['usuario_logado'] = request.form['usuario']
-        flash(session['usuario_logado'] + 'logado com sucesso!')
+        flash(session['usuario_logado'] + ' logado com sucesso!')
         return redirect('/')
     else:
         flash('Usuário não logado')
